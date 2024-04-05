@@ -66,6 +66,7 @@ const PhoneBook = () => {
         <Table.Td>
           <Flex gap={30}>
             <PencilSimple
+              style={{ cursor: "pointer" }}
               size={20}
               color="green"
               onClick={() => {
@@ -74,6 +75,7 @@ const PhoneBook = () => {
               }}
             />
             <Trash
+              style={{ cursor: "pointer" }}
               size={20}
               color="red"
               onClick={() => {
