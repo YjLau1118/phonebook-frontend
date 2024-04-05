@@ -30,19 +30,16 @@ const EditContactModal = ({
   useEffect(() => {
     if (_id) {
       getContactById(_id).then((res) => {
-        console.log(res);
         form.setFieldValue("name", res.name);
         form.setFieldValue("phone", res.phone);
       });
     }
   }, [_id]);
-  console.log(_id);
 
   const handleEdit = () => {
     if (_id && form.values.name && form.values.phone) {
       try {
         editContact(_id, form.values.name, form.values.phone).then((res) => {
-          console.log(res);
           onSubmit();
         });
       } catch (error) {

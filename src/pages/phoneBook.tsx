@@ -48,7 +48,6 @@ const PhoneBook = () => {
       setIsLoading(true);
       try {
         deleteContact(id).then((res) => {
-          console.log(res);
           setOpenDeleteModal(false);
           getContactList().then((updatedList) => {
             setPhonebookList(updatedList);
