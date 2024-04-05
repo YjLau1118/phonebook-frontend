@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  deleteContact,
-  editContact,
-  getContactList,
-} from "../utils/api/phonebookApi";
+import { deleteContact, getContactList } from "../utils/api/phonebookApi";
 import { IContactList } from "../utils/types";
 import style from "../styles/phoneBook.module.css";
 import {
@@ -11,7 +7,6 @@ import {
   Card,
   Dialog,
   Flex,
-  Group,
   Loader,
   Stack,
   Table,
